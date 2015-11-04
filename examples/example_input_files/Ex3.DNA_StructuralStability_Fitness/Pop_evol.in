@@ -1,0 +1,14 @@
+PDB=	1TRE.pdb 		# pdb file
+CHAIN=  A			# Chain of pdb file
+FILE_STR=	structures.in 	# List of contact matrices
+TEMP=	1.8			# Temperature
+S0=	0.05			# s0, configurational entropy per residue (unfolded)
+SC1=    0.05			# configurational entropy per residue (misfolded)
+SC0=    0.0			# configurational entropy offset (misfolded)
+REM3=	0			# Third cumulant in REM calculation
+
+NEUTRAL=	0		# If 1, Neutral landscape, otherwise population size dependent selection
+NPOP=	10			# N_pop, population size
+
+TYPE_BL=	2		# Branch type: "1" branches by mutations, "2" branches by substitutions
+OUTPUT_LEVEL=	2		# Print all output files "2"; Print only "final" output files "1"; Do not print them (default) "0" 

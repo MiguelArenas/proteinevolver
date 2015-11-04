@@ -1,0 +1,16 @@
+# File Results/ProteinStability/ProteinStability_Replicate2_Branch21_1TREA_T1.80_S00.05_Neutral_GC0.40, sequence ,  PDB 1TREA,  length=255
+# fitness: F=1./(1+exp(DeltaG))
+# 1 iterations, random seed: -1186578316
+# Stationary frequencies: A 0.350 T 0.250 G 0.230 C 0.170 # GC bias: 0.400
+# T= 1.800
+# Configurational entropy per residue: 0.050
+# Neutral
+#
+# MRHRLVMGNWKLNGSRHMVHELVSNLRKELAGIAGCAVAIAPPEVYIDMAKREAEGSHIM
+# LGAQNVNLNLSGAFTGDTSAAMLKNIGAQYIIIGHCERRTPHKESDELIAKKFAVLKEQG
+# LTPVLCIGETEAENEAGKTEEVCARLIDAVLKTQGAAAFEGAVIAYEPVRAIGTGKSATP
+# AQAQAFHKFIRGHIAKVDANLAEQVIIQYGGSMNASNAAELFAQPDIDGALVGGASLKAD
+# AFAVIVKAAEAAKQA
+# N  fitness (sd)     E    (sd)    gap  (sd) seq.entropy     Trans.load   (sd)  Mut.load  (sd)  syn/nonsyn reject  samples
+Neutral  0.96920747 nan  -33.57110214 0.00000000  -3.44920540 0.00112764  -2.8915  nan nan  nan nan  0.000  0.6667  1
+Neutral  0.97690558 0.01333196  -33.75887680 0.32513519  -3.46842456 0.03328918  -2.8915  nan nan  nan nan  0.000  0.5000  2
