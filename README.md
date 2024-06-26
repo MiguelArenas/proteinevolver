@@ -1,4 +1,5 @@
-ProteinEvolver generates samples of protein-coding genes and protein sequences evolved along phylogenies under structure-based substitution models. These models consider the protein structure to evaluate candidate mutations, which can be accepted (substitutions) or rejected depending on the energy of the protein structure of the mutated sequence. The simulation of molecular evolution occurs along phylogenetic histories, which can be either user-specified or simulated by the coalescent modified with recombination (including recombination hotspots), migration, demographics and longitudinal sampling.
+ProteinEvolver generates samples of protein sequences evolved along phylogenies under empirical and structurally constrained substitution models of protein evolution. 
+In ProteinEvolver1.2.0, The simulation of molecular evolution occurs along phylogenetic histories, which can be either user-specified or simulated by the coalescent modified with recombination (including recombination hotspots), migration, demographics and longitudinal sampling.
 
 To download ProteinEvolver I recommend use the Chrome browser. Then go to releases and click on the desired files (ProteinEvolver-1.2.0.zip; do not download Source code files because they only include a readme).
 
