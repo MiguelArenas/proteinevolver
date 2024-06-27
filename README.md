@@ -1,4 +1,4 @@
-ProteinEvolver generates samples of protein sequences evolved along phylogenies under empirical and structurally constrained substitution models of protein evolution. 
+ProteinEvolver simulates samples of protein sequences evolved along phylogenies under empirical and structurally constrained substitution models of protein evolution. 
 
 --
 
