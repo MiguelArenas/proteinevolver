@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>ProteinEvolver README</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="824.48">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times}
+    p.p2 {margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times}
+    p.p3 {margin: 0.0px 0.0px 6.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; min-height: 14.0px}
+    p.p9 {margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Courier}
+    p.p10 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Courier}
+    p.p11 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Courier; min-height: 14.0px}
+    span.s1 {text-decoration: underline ; color: #002cd6}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>ProteinEvolver 2.2.0 README</b></h1>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>31 May 2024</b></h3>
+<p class="p3"><br></p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Purpose</b></h2>
+<p class="p5">ProteinEvolver simulates protein evolution along given –phylogenetic tree– or simulated phylogenetic histories –including population birth-death and coalescent (with complex heterogeneous recombination rate, migration and demographics) phylogenetic processes– under empirical and structurally constrained substitution models.<br>
+A relevant new feature is that the simulated evolutionary history can be affected by the fitness (protein folding stability) of the simulated protein sequences by combining the population birth-death population model (that simulates the evolutionary history) with a structurally constrained substitution model (i.e., protein variants with a high fitness lead to high birth and low death rates, resulting in a high number of descendants; and the opposite for protein variants with a low fitness that may lead to low birth and high death rates resulting in extinctions). Thus, it simulates both the evolutionary history and molecular evolution simulatenously, by applying selection from the folding stability in every molecular variant to simulate every node of the phylogenetic tree and protein evolution. <br>
+The file <i>ProteinEvolver2.2.0.manual.pdf</i> includes detailed documentation, and the user is strongly advised to read it carefully before using the program.</p>
+<p class="p11"><br></p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Download and Installation</b></h2>
+<p class="p6">Download the program fom <a href="https://github.com/MiguelArenas/proteinevolver"><span class="s1">https://github.com/MiguelArenas/proteinevolver</span></a>. Open a console window. In the same directory as the file <i>ProteinEvolver2.2.0.zip</i>, type:</p>
+<p class="p7">unzip ProteinEvolver2.2.0.zip</p>
+<p class="p6">You should now see a folder called <i>ProteinEvolver-2.2.0</i>. Note that this zip file was made on a mac, so in windows or linux you might see some strange files, that start with "." or "-". These are macintosh hidden files, which can be safely removed without affecting the software.</p>
+<p class="p5">Executables for MacOSX and Linux are available inside the folder <i>exe</i>.</p>
+<p class="p11"><br></p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Compilation</b></h2>
+<p class="p6">The program should compile without much problem in any Unix-like environment (Linux, MacOSX, etc.). A <i>makefile</i> is provided for the <i>gcc</i> compiler, but if you have <i>cc</i> instead, just change <i>gcc</i> for <i>cc</i> in the makefile. The default optimization level is set to <i>-O3</i>. To compile in macintosh with an intel processor, and probably in othe machines, you can enable the option <i>-fast</i> instead.</p>
+<p class="p5">To compile the program move into the folder <i>src</i> inside the <i>ProteinEvolver-2.2.0</i> folder and type:</p>
+<p class="p7">make all</p>
+<p class="p5">to compile the executable in the current folder (<i>src</i>) inside the <i>ProteinEvolver-2.2.0</i> folder, or</p>
+<p class="p7">make install</p>
+<p class="p5">to clean, compile and install the new executable in the <i>exe</i> folder inside the <i>ProteinEvolver-2.2.0</i> folder.</p>
+<p class="p5">The program should compile without problems with a second makefile "Makefile_MPI" for a MPI version. This makefile might need some modifications for particular OS. To compile the program type:</p>
+<p class="p7">make -f Makefile_MPI</p>
+<p class="p11"><br></p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Execution</b></h2>
+<p class="p8"><span class="Apple-converted-space"> </span></p>
+<p class="p7">The program runs in a command-line window. In MacOS X and Linux the user needs to open the Terminal application, and in Windows XP the user</p>
+<p class="p7">should open the Command Prompt. To run the program move to the folder where the executable is located and type:</p>
+<p class="p8"><br></p>
+<p class="p7">./ProteinEvolver2.2.0</p>
+<p class="p8"><br></p>
+<p class="p8"><br></p>
+<p class="p10">For execute the parallel version, MPI libraries have to be installed in the host. The minimum number of processors is two. An example of execution in 3 processors is the next:</p>
+<p class="p7">mpirun -np 3 ProteinEvolver2.2.0</p>
+<p class="p8"><br></p>
+<p class="p10">Arguments can be entered in the command line or, more conveniently, <b>from a text file called "<i>parameters</i>" that should be located in the same directory as the executable</b>. See the documentation for further details.</p>
+<p class="p11"><br></p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Disclaimer</b></h2>
+<p class="p8"><span class="Apple-converted-space"> </span></p>
+<p class="p7"><i>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later<span class="Apple-converted-space"> </span></i></p>
+<p class="p7"><i>version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.</i></p>
+<p class="p8"><br></p>
+<p class="p8"><br></p>
+<p class="p7">Miguel Arenas<span class="Apple-converted-space">  </span>- marenas@uvigo.es - miguelmmmab@gmail.com</p>
+<p class="p8"><br></p>
+</body>
+</html>
