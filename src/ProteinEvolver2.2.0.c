@@ -495,7 +495,7 @@ static int		IndexSegBD (TreeNodex *f);
 static int		IndexSegNet (TreeNodex *f);
 static int		LabelSeg (TreeNodex *f);
 static void		ListTimesSeg (TreeNodex *f);
-static void		PrintTimesSeg ();
+static void		PrintTimesSeg (int replicate, int indNumRE, int numNuc, int *arrayIndBreakpointsOrd);
 static void		PrintTreesSeg (int replicate, int indNumRE, int numNuc, int *arrayIndBreakpointsOrd);
 static void		WriteTreeSeg (TreeNodex *f);
 static void		WriteTreeSegBD (TreeNodex *f);
