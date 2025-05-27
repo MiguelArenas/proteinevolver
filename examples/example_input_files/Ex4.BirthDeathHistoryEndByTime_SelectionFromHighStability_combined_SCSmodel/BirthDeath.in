@@ -1,18 +1,0 @@
-[INPUT FILE FOR ProteinEvolver2.2.0][options and comments within brackets are ignored]
-
-[** BIRTH-DEATH SIMULATIONS **]
-
-	[birth rate and death rate; if -1 or -2 variable rates based on fitness from real or increased protein stability, respectively] [l0.2 0.1] [l0.3 0.1] [l-1] l-2
-
-	[criterion for ending the BD process (sample size (+1; sample including extinctions=1, forced sample=2, forced tips=3; sample size) or time to sample (+2))] [+1 1 10] [+2 7.1] +2 14300.6
-
-	[prune extinct nodes and lineages of the BD tree, no (1) or yes (2)] >1
-
-	[outgroup; branch length] [o0.001]
-
-	[substitution rate] [u4.95e-6] u9.1e-2
-
-	[effective population size; Haploid/Diploid (1 or 2)] e1000 2
-
-	[alignment length (nt or aa)] s255
-	
