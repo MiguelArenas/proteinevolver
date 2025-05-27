@@ -6,7 +6,7 @@
 
 
 PROGRAM_NAME = ProteinEvolver
-VERSION = 2.2.0
+VERSION = 2.2.1
 FILES = Makefile parameters 
 EXEDIR  = ../exe
 CMP = gcc -c
