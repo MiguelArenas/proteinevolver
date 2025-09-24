@@ -3,7 +3,7 @@ ProteinEvolver simulates samples of protein sequences evolved along phylogenies 
 --
 
 The version 2.2.1 provides the additional simulation of protein evolution combining the evolutionary history given by a birth-death population genetics process with the structurally constrained substitution models of protein evolution. In particular, the fitness of every simulated protein variant is calculated and used to determine its birth and death rates of its evolution.
-Ferreiro D, González-Vázquez LD, Prado-Comesaña A, Arenas M. 2025. Forecasting protein evolution by integrating birth-death population models with structurally constrained substitution models. eLife, 14:RP106365. https://doi.org/10.7554/eLife.106365.2
+Ferreiro D, González-Vázquez LD, Prado-Comesaña A, Arenas M. 2025. Forecasting protein evolution by integrating birth-death population models with structurally constrained substitution models. eLife, 14:RP106365. https://elifesciences.org/articles/106365
 
 To download ProteinEvolver2.2.1 I recommend use the Chrome browser. Then download it directly from this page or go to releases and click on the desired files (ProteinEvolver-2.2.1.zip; do not download Source code files because they only include a readme; https://github.com/MiguelArenas/proteinevolver/releases/download/v2.2.1/ProteinEvolver-2.2.1.zip).
 
